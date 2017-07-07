@@ -1,0 +1,369 @@
+body{
+    background-color:#ebebeb;
+}
+/*公共类*/
+.write{
+    color:#959595;
+    margin-top:14px;
+}
+.span1{
+    color:red;
+}
+.span2{
+    width:80px;
+    border-bottom:1px solid red;
+    padding-bottom:7px;
+    display:inline-block;
+}
+.lchild{
+    padding-bottom:7px;
+    border-bottom:1px solid #303030;
+    margin-bottom:21px;
+    font-size:1.5em;
+}
+/*header开始*/
+header{
+    height:234px;
+    background-image:url("img/44e1c4e50d55159c65da6a41bc07e.jpg");
+    background-repeat:no-repeat;
+    background-position:center 20%;
+    position:relative;
+    text-align:center;
+}
+h1{
+    color:#fff;
+    font-size:45px;
+    font-weight:400;
+    text-align:center;
+    padding-top:72px;
+    font-family:inherit;
+}
+.menu{
+    position:relative;
+    top:15px;
+    width:671px;
+    margin:0 auto;
+}
+.menu ul li{
+    /*display:inline-block;*/
+    float:left;
+    font-weight:400;
+    border:1px solid red;
+    padding:7px 14px;
+    border-radius:2px;
+    transition:all 0.2s ease-in-out;
+    margin-right:5px;
+}
+.menu ul li a{
+    color:white;
+}
+.menu ul li:hover{
+    background-color:#303030;
+    border:1px solid #303030;
+    color:#fff;
+}
+.navz{
+    background-color:white;
+    position:relative;
+    top:71px;
+    height:56px;
+}
+.nav{
+    position:relative;
+    top:0;
+    height:56px;
+    margin:0 auto;
+    width:776px;
+}
+.nav ul li{
+    float:left;
+    color:#505050;
+    line-height:56px;
+    padding:0 21px;
+}
+.nav ul li a:hover{
+    color:red;
+}
+
+/*header结束*/
+/*主要内容开始*/
+.container{
+    margin:0 auto;
+    width:1140px;
+    height:9200px;
+    position:relative;
+    /*border:1px solid red;*/
+    top:100px;
+}
+/*aside开始*/
+aside{
+    float:right;
+    width:360px;
+    height:695px;
+}
+.asidext{
+    width:300px;
+    background-color:white;
+    padding:21px 30px;
+}
+.aside-top{
+    height:120px;
+    margin-bottom:35px;
+}
+.first-child{
+    padding-bottom:0px;
+    border-bottom:1px solid #ebebeb;
+    margin-bottom:21px;
+    font-size:1.5em;
+
+}
+.aside-top div:last-child{
+    line-height:1.75em;
+    color:rgb(80, 80, 80);
+}
+.aside-center{
+    height:88px;
+    margin-bottom:35px;
+}
+.aside-center div:last-child{
+    border:1px solid red;
+    padding:7px 14px;
+    border-radius:2px;
+    transition:all 0.2s ease-in-out;
+    background-color:#f4645f;
+    color:white;
+    text-align:center;
+}
+.aside-center div:last-child a{
+    color:white;
+}
+.aside-center div:last-child:hover{
+    background-color:#303030;
+    border:1px solid #303030;
+    color:#fff;
+}
+.aside-bottom{
+    height:256px;
+}
+.aside-bottom a{
+    border:1px solid #ebebeb;
+    padding:2px 7px;
+    color:#959595;
+    line-height:1.5em;
+    display:inline-block;
+    margin:0 7px 7px 0;
+}
+.aside-bottom a:hover{
+    background-color:#f4645f;
+    color:#fff;
+}
+/*aside结束*/
+/*左边内容开始*/
+.container-left{
+    width:750px;
+    height:717px;
+    background-color:white;
+    margin-bottom:35px;
+    /*padding:35px;*/
+}
+.head{
+    padding:35px;
+    width:680px;
+    text-align:center;
+    color:#303030;
+}
+.test1{
+    font-size:2.0em;
+    line-height:1.2em;
+}
+.container-left img{
+    width:680px;
+    height:320px;
+}
+.container img{
+    margin:0 35px;
+}
+.test2{
+    width:680px;
+    height:87px;
+    left:35px;
+    font-family:"Georgia", "Xin Gothic", "Hiragino Sans GB",
+    "Droid Sans Fallback", "Microsoft YaHei", sans-serif ;
+    font-size:18px;
+    font-weight:400;
+    line-height:1.62;
+    color:#444443;
+    margin:30px 35px;
+}
+.test4{
+    width:56px;
+    font-weight:400;
+    border:1px solid red;
+    padding:7px 14px;
+    border-radius:2px;
+    transition:all 0.2s ease-in-out;
+    margin-left:35px;
+    background-color:#f4645f;
+}
+.test4 a{
+    color:white;
+}
+.test4:hover{
+    background-color:#303030;
+    border:1px solid #303030;
+    color:#fff;
+}
+.hr1{
+    color:rgba(80,80,80,0.6);
+    width:680px;
+    margin:15px 35px;
+}
+.test5{
+    width:289px;
+    height:28px;
+    padding:0 35px;
+}
+.test5 p{
+    display:inline-block;
+    font-size:14px;
+    color:#959595;
+    line-height:28px;
+}
+.test5 a{
+    color:#959595;
+}
+.test5 a:hover{
+    color:red;
+    text-decoration:underline;
+}
+.write a:hover{
+    color:red;
+    text-decoration:underline;
+}
+/*左边内容结束*/
+.last{
+    width:750px;
+    height:36px;
+    margin-bottom:35px;
+    text-align:center;
+    /*border:1px solid red;*/
+}
+.test-last{
+    float:left;
+    /*border:1px solid red;*/
+    padding:0 14px;
+    border-radius:2px;
+    transition:all 0.2s ease-in-out;
+    background-color:#f4645f;
+    color:white;
+    margin-right:3px;
+    height:36px;
+    line-height:36px;
+}
+.last1{
+    width:146px;
+    margin:0 auto;
+}
+.last p:last-child a{
+    color:white;
+}
+/*主要内容结束*/
+/*结尾*/
+footer{
+    width:auto;
+    height:328px;
+    background-color:#202020;
+    padding-top:35px;
+    /*text-align:center;*/
+}
+.footer-container{
+    width:1170px;
+    height:328px;
+    margin:0 auto;
+}
+.footer-left{
+    width:300px;
+    height:293px;
+    padding:0 30px;
+    float:left;
+    margin:0 15px;
+}
+.footer-left a{
+    color:#959595;
+}
+.footer-left a:hover{
+    color:#f4645f;
+}
+.p-left-top{
+    color:white;
+}
+.p-left-center{
+    border-bottom:1px dashed #303030;
+    padding-bottom:14px;
+    margin-bottom:14px;
+    color:#959595;
+    line-height:1.75em;
+}
+.data{
+    color:#505050;
+}
+.footer-middle{
+    width:300px;
+    height:222px;
+    padding:0 30px;
+    float:left;
+    margin:0 15px;
+}
+.footer-middle a{
+    border:1px solid #303030;
+    padding:2px 7px;
+    color:#959595;
+    line-height:1.5em;
+    display:inline-block;
+    margin:0 7px 7px 0;
+    transition:all 0.3s linear;
+}
+.footer-middle a:hover{
+    background-color:#f4645f;
+    color: #fff;
+}
+.footer-right{
+    width:300px;
+    height:238px;
+    padding:0 30px;
+    float:left;
+    margin:0 15px;
+}
+.footer-right-top{
+    border-bottom:1px dashed #303030;
+    padding-bottom:14px;
+    margin-bottom:14px;
+}
+.footer-right-top a{
+    padding:2px 7px;
+    color:#959595;
+    line-height:2.5em;
+    margin:7px 0 7px 0;
+    font-size:14px;
+    transition:all 0.3s linear;
+}
+.footer-right-top a:hover{
+    background-color:#f4645f;
+    color:#fff;
+}
+.hr2{
+    margin:0;
+    border:0;
+}
+/*copyright*/
+.copyright{
+    height:24px;
+    padding:28px 0;
+    background-color:#111;
+    text-align:center;
+    line-height:24px;
+}
+.copyright a:hover{
+    text-decoration:underline;
+}
+

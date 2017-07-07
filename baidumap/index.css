@@ -1,0 +1,214 @@
+/*导航*/
+.nav {
+    height: 50px;
+    background-color: rgb(249, 249, 249);
+    border-bottom: 1px solid #d4d4d4;
+    display: flex;
+    line-height: 50px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.nav ul {
+    flex: 1;
+    display: flex;
+}
+
+.nav ul li {
+    flex: 1;
+}
+
+.nav ul li:nth-child(2) {
+    background-color: rgb(209, 220, 239);
+    color: rgb(75, 143, 249);
+    border-bottom-color: rgb(75, 143, 249);
+}
+
+.dl {
+    height: 50px;
+    width: 54px;
+    color: rgb(51, 133, 255);
+    border-left: 1px solid rgb(212, 212, 212);
+}
+
+/*搜索*/
+.search {
+    padding: 10px;
+    font-size: 15px;
+    background-color: rgb(249, 249, 249);
+    box-shadow: rgba(0, 0, 0, 0.2) 0 2px 1px -1px;
+    display: flex;
+}
+
+.search input {
+    border: 1px solid rgb(107, 177, 247);
+    border-right: none;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    flex: 1;
+    padding-left:10px;
+    outline:none;
+}
+
+.search-word {
+    height: 43px;
+    background-color: rgb(107, 177, 247);
+    padding: 0 10px;
+    border: 1px solid rgb(107, 177, 247);
+    border-left: none;
+    color: #fff;
+    line-height: 43px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+/*内容*/
+.shfw {
+    text-align:center;
+}
+.shfw-title{
+    display:flex;
+    padding:10px 20px 0 20px;
+    align-items:center;
+}
+.shfw-word {
+    font-size: 16px;
+    padding-right: 10px;
+    color: rgb(59,59,59);
+}
+.shfw-line{
+    flex:1;
+    border-top: 1px solid rgb(212, 212, 212);
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+.shfw-top{
+    display:flex;
+    padding:10px 10px;
+    justify-content:space-around;
+}
+.shfw .shfw-top .pic1-pic{
+    width:53px;
+    height:53px;
+    background-size:59px auto;
+}
+.shfw .shfw-top .pic1-word{
+    margin:5px 0;
+}
+.shfw .shfw-top .pic1-pic1{
+    background:url("img/index-nb-round_3e43e00.png") no-repeat -3px -2px;
+}
+.shfw .shfw-top .pic1-pic2{
+    background:url("img/index-nb-round_3e43e00.png") no-repeat -3px -64px;
+}
+.shfw .shfw-top .pic1-pic3{
+    background:url("img/index-nb-round_3e43e00.png") no-repeat -3px -187px;
+}
+.shfw .shfw-top .pic1-pic4{
+    background:url("img/index-nb-round_3e43e00.png") no-repeat -3px -1111px;
+}
+.shfw .shfw-top .pic2-pic1{
+    background:url("img/index-nb-round_3e43e00.png") no-repeat -3px -798px;
+}
+.shfw .shfw-top .pic2-pic2{
+    background:url("img/index-nb-round_3e43e00.png") no-repeat -3px -675px;
+}
+.shfw .shfw-top .pic2-pic3{
+    background:url("img/index-nb-round_3e43e00.png") no-repeat -3px -126px;
+}
+.shfw .shfw-top .pic2-pic4{
+    background:url("img/index-nb-round_3e43e00.png") no-repeat -3px -430px;
+}
+
+.shfw .shfw-top .pic2-pic{
+    width:45px;
+    height:45px;
+    background-size:59px auto;
+}
+.shfw .shfw-top .pic3-pic1{
+    background:url("img/index-nb-round_3e43e00.png") no-repeat -7px -922px;
+}
+.shfw .shfw-top .pic3-pic2{
+    background:url("img/index-nb-round_3e43e00.png") no-repeat -7px -986px;
+}
+.shfw .shfw-top .pic3-pic3{
+    background:url("img/index-nb-round_3e43e00.png") no-repeat -7px -1050px;
+}
+.shfw .shfw-top .pic3-pic4{
+    background:url("img/index-nb-round_3e43e00.png") no-repeat -7px -1593px;
+}
+.shfw .shfw-top .pic3-pic5{
+    background:url("img/index-nb-round_3e43e00.png") no-repeat -3px -1171px;
+}
+.pic1.count{
+    position:relative;
+}
+.pic1.count::after{
+    content:"首单减";
+    color:white;
+    background-color:red;
+    border-radius:25%;
+    position:absolute;
+    top:3px;
+    right:-5px;
+}
+.rmtj{
+    display:flex;
+    padding:15px 20px 5px 20px;
+}
+.shfw .rmtj .pic4{
+    width:40px;
+    height:40px;
+    margin-right:10px;
+}
+.shfw .rmtj .rmtj-word{
+    flex:1;
+}
+.shfw .rmtj .rmtj-word1{
+    font-size:16px;
+    /*line-height:20px;*/
+    text-align:left;!important;
+    width:800px;
+}
+.shfw .rmtj .rmtj-word2{
+    text-align:left;!important;
+    width:800px;
+}
+.rmtj .rmtj-word3{
+    color:rgb(73, 167, 218);
+    border:1px solid rgb(73, 167, 218);
+    padding:8px 10px;
+    border-radius:3px;
+}
+/*footer*/
+.footer{
+    display:flex;
+    height:30px;
+    padding:10px;
+    margin-bottom:10px;
+}
+.footer .footer-all{
+    flex:1;
+    height:30px;
+    border:1px solid rgb(212, 212, 212);
+    background-color:rgb(249, 249, 249);
+    display:flex;
+}
+.footer .footer-word{
+    color:rgb(75, 143, 249);
+    width:201px;
+    line-height:30px;
+    text-align:right;
+    padding-right:10px;
+}
+.footer .place{
+    line-height:30px;
+    flex:1;
+    padding-left:10px;
+}
+.footer .footer-pic{
+    width:35px;
+    height:30px;
+    border-right:1px solid rgb(212, 212, 212);
+    background-color:rgb(249, 249, 249);
+}
+

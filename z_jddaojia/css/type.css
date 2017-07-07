@@ -1,0 +1,188 @@
+.top{
+    position: fixed;
+    z-index: 9;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 45px;
+    color: #555;
+    font-size: 17px;
+    text-align: center;
+    line-height: 44px;
+    background-color: #fff;
+}
+.top > div{
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    right: 8px;
+    background-color: #fff;
+    border-radius: 2px;
+    border: 1px solid #e6e6e6;
+    height: 28px;
+    padding: 0 5px 0 20px;
+}
+.top > div > .i1{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 44px;
+    height: 44px;
+    background: url("../img/search_bar_sprites.png") no-repeat;
+    background-size: 44px auto;
+    background-position: -8px -8px;
+}
+.top > div > input{
+    max-width: 90%;
+    padding: 3px 0;
+    outline: none;
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    font-family:  "microsoft yahei",Verdana,Arial,Helvetica,sans-serif;
+    height: 28px;
+    width: 100%;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+.ul-type{
+    position: fixed;
+    left: 0;
+    top: 45px;
+    bottom: 50px;
+    width: 90px;
+    z-index: 2;
+    overflow: auto;
+    background: #f8f8f8;
+}
+.ul-type > li{
+    height: 43px;
+    line-height: 43px;
+    font-size: 14px;
+    border-bottom: 1px solid #e8e8e8;
+    border-right: 1px solid #e8e8e8;
+    padding-left: 14px;
+    color: #666;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.ul-type > .selected{
+    padding-left: 11px;
+    color: #47b34f;
+    background-color: #fff;
+    border-left: 3px solid #47b34f;
+    border-right-color: #fff;
+}
+article{
+    margin-top: 44px;
+}
+.include{
+    background: #fff;
+}
+.include .species{
+    min-height: 428px;
+    padding:0 0 50px 95px;
+    background: #fff;
+}
+.include .species > dl{
+    padding-top: 9px;
+}
+.include .species > dl > dt{
+    height: 19px;
+    margin: 9px 0 9px 7%;
+    line-height: 19px;
+    font-size: 13px;
+    color: #666;
+}
+.include .species > dl > dd{
+
+}
+.include .species > dl > dd > a{
+    display: inline-block;
+    width: 32%;
+    min-height: 94px;
+    margin-top: 6px;
+}
+.include .species > dl > dd > a > img{
+    display: block;
+    width: 62px;
+    height: 62px;
+    margin: 0 auto;
+    background-image: url('../img/default_img.png');
+    background-size: 100%;
+    background-color: #f4f4f4;
+}
+.include .species > dl > dd > a > span{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    color: #7d7d7d;
+    padding: 8px 0;
+}
+/*尾部开始*/
+footer{
+    position: fixed;
+    z-index: 826;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    border-top: 1px solid #d9d9d9;
+}
+footer a{
+    display: block;
+    float: left;
+    width: 20%;
+    height: 20px;
+    font-size: 12px;
+    line-height: 17px;
+    text-align: center;
+    padding-top: 30px;
+    background: url("../img/nav2.png") no-repeat;
+    background-size: 22px 500px;
+}
+footer .index{
+    background-position: center -250px;
+}
+.color{
+    color: #39ac69;
+}
+footer .type{
+    background-position: center -50px;
+}
+footer .shop{
+    background-position: center -350px;
+}
+footer .myOrder{
+    background-position: center -400px;
+}
+footer .mine{
+    background-position: center -450px;
+}
+/*尾部结束*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

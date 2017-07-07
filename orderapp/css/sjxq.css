@@ -1,0 +1,244 @@
+body{
+    background: url("../img/bg-body.jpg") no-repeat;
+    background-size: cover;
+}
+/*头部开始*/
+header{
+    height: 80px;
+    background-color: #017e5c;
+    text-align: center;
+    position:relative;
+    color: #fff;
+}
+header a{
+    position: absolute;
+    top: 10px;
+    left: 28px;
+}
+header  div:first-child{
+    position: absolute;
+    top: 20px;
+    left: 28px;
+}
+header  div:first-child i{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("../img/icon-login.png") no-repeat;
+    background-size: cover;
+}
+header  span{
+    line-height: 80px;
+}
+/*头部结束*/
+/*内容开始*/
+.container{
+    width: 100%;
+}
+.container  .main{
+    width: 90%;
+    margin:20px auto;
+}
+.container  .main > div{
+    width: 100%;
+    /*margin: 0 auto;*/
+    color: #a6a6a6;
+    border: 1px solid #e5e5e5;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 1px #ebebeb;
+    /*padding-left: 17px;*/
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+.container .top > div:first-child{
+    height: 85px;
+    box-sizing: border-box;
+    padding-top: 17px;
+}
+.container .top > div:first-child > div{
+    color: #000;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.container .top > div:first-child > span:last-child{
+    float: right;
+    margin-right: 10px;
+}
+.container .top .star{
+    height: 40px;
+}
+.container .top .star > div:not(:last-child){
+    float: left;
+    width: 14px;
+    height: 14px;
+    background-color: #ff0000;
+    border-radius: 3px;
+    margin-right: 5px;
+    margin-top: 13px;
+}
+.container .top .star > div i{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: url("../img/icon-index.png") no-repeat -20px -16px;
+    position: relative;
+    left: 1px;
+    top: -4px;
+}
+.container .top .star > div:nth-child(5){
+    background-color: #eee;
+}
+.container .top .star > div:last-child{
+    float: right;
+}
+.container .top .star > div > span{
+    float: left;
+    margin-right: 10px;
+    margin-top: 9px;
+}
+.container .top .menu {
+    padding: 10px 0 10px 10px;
+}
+.container .top .menu img{
+    width: 75px;
+    height: 50px;
+}
+.container .top .menu > div{
+    float: right;
+}
+.container .top .menu > div > span{
+    float: left;
+    margin-right: 10px;
+    margin-top: 13px;
+}
+.container .top .phone {
+    height: 40px;
+    line-height: 40px;
+}
+.container .top .phone span:last-child {
+    float: right;
+    margin-right: 10px;
+}
+.container .tuijian .title{
+    height: 40px;
+    line-height: 40px;
+    color: #000;
+    font-size: 16px;
+}
+.container .tuijian .pic{
+    line-height: 0;
+    position: relative;
+}
+.container .tuijian .pic img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+.container .tuijian .pic img:not(:last-child){
+    width: 120px;
+    height: 90px;
+    margin-right: 20px;
+}
+.container .tuijian .pic img:last-child{
+    width: 58px;
+    height: 90px;
+}
+.container .tuijian .pic {
+
+}
+.container .tuijian .pic .d1{
+    width: 120px;
+    height: 40px;
+    background-color: rgba(1,126,92,0.4);
+    position: absolute;
+    top: 60px;
+    font-size: 14px;
+    z-index: 2;
+    color: #fff;
+}
+.container .tuijian .pic .d2{
+    position: absolute;
+    top: 60px;
+    left: 155px;
+}
+.container .tuijian .pic .d3{
+    height: 40px;
+    background-color: rgba(1,126,92,0.4);
+    width: 58px;
+    position: absolute;
+    top: 60px;
+    left: 300px;
+    z-index: 2;
+    color: #fff;
+}
+
+.container .tuijian .pic .d1 > div:first-child{
+    position: absolute;
+    top: 13px;
+    left: 3px;
+}
+.container .tuijian .pic .d1 > div:last-child{
+    position: absolute;
+    top: 29px;
+    left: 3px;
+}
+.container .tuijian .pic .d1.d2 > div:first-child{
+    position: absolute;
+    top: 13px;
+    left: 3px;
+}
+.container .tuijian .pic .d1.d2 > div:last-child{
+    position: absolute;
+    top: 29px;
+    left: 3px;
+}
+.container .tuijian .pic .d3 > div:first-child{
+    position: absolute;
+    top: 13px;
+}
+.container .tuijian .pic .d3 > div:last-child{
+    position: absolute;
+    top: 29px;
+}
+.container .tuijian .search{
+    height: 40px;
+    line-height: 40px;
+    color: #f2bd47;
+    font-size: 16px;
+}
+.container .tuijian .search span:last-child {
+    float: right;
+    margin-right: 10px;
+}
+.container .word > div{
+    height: 40px;
+    line-height: 40px;
+}
+.container .message .text{
+    box-sizing: border-box;
+    padding: 10px;
+}
+/*内容结束*/
+/*footer开始*/
+footer{
+    height: 80px;
+    /*width: 100%;*/
+    background-color: #eeeeee;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+footer div:not(:nth-child(2)){
+    /*flex: 1;*/
+}
+footer div:nth-child(2){
+    width: 60%;
+    height: 50px;
+    background-color: #f2bd47;
+    border-radius: 30px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+}
+/*footer结束*/

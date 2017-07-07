@@ -1,0 +1,71 @@
+body {
+    background: url("../img/bg-body.jpg") no-repeat;
+    background-size: cover;
+    height: auto;
+}
+/*头部开始*/
+header{
+    height: 80px;
+    background-color: #017e5c;
+    text-align: center;
+    position:relative;
+    color: #fff;
+}
+header a:first-child{
+    position: absolute;
+    top: 10px;
+    left: 28px;
+}
+header  div:first-child{
+    position: absolute;
+    top: 20px;
+    left: 28px;
+}
+header  div:first-child i{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("../img/icon-login.png") no-repeat;
+    background-size: cover;
+}
+header  span{
+    line-height: 80px;
+}
+header a:last-child{
+    color: #fff;
+    line-height: 80px;
+    position: absolute;
+    right: 30px;
+}
+/*头部结束*/
+/*内容开始*/
+.container{
+
+}
+.container .title > div{
+    height: 80px;
+    /*width: 100%;*/
+    line-height: 80px;
+    padding-left: 20px;
+}
+.container .title > div:not(:nth-child(2)){
+    background-color: #eee;
+    color: #017e5c;
+}
+.container .title > div:nth-child(2){
+    color: #000;
+}
+.container .city > div > div{
+    height: 50px;
+    line-height: 50px;
+    padding-left: 20px;
+    border-bottom: 1px solid #e2e2e2;
+}
+.container .city > div > div:not(:first-child){
+    color: #000;
+}
+.container .city > div > div:first-child{
+    background-color: #f5f5f5;
+    color: #b1b1b1;
+}
+/*内容结束*/

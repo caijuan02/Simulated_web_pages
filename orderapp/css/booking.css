@@ -1,0 +1,130 @@
+body {
+    background: url("../img/bg-body.jpg") no-repeat;
+    background-size: cover;
+    height: auto;
+}
+
+/*头部开始*/
+header {
+    height: 80px;
+    background-color: #017e5c;
+    text-align: center;
+    position: relative;
+    color: #fff;
+}
+
+header a:first-child {
+    position: absolute;
+    top: 10px;
+    left: 28px;
+}
+
+header div:first-child {
+    position: absolute;
+    top: 20px;
+    left: 28px;
+}
+
+header div:first-child i {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("../img/icon-login.png") no-repeat;
+    background-size: cover;
+}
+
+header span {
+    line-height: 80px;
+}
+
+header a:last-child {
+    color: #fff;
+    line-height: 80px;
+    position: absolute;
+    right: 30px;
+}
+
+/*头部结束*/
+/*内容开始*/
+table {
+    width: 90%;
+    height: 251px;
+    margin: 20px auto;
+    border: 1px solid #e1e1e1;
+    background-color: #fff;
+    text-align: center;
+}
+
+table tr:first-child {
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+}
+
+table tr > .td1 {
+    border: none;
+    position: absolute;
+    left: 30px;
+}
+
+.container .xuanzhuo {
+    width: 90%;
+    height: 120px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #e1e1e1;
+    border-bottom: none;
+    box-sizing: border-box;
+    color: #a6a6a6;
+    margin-bottom: 20px;
+}
+
+.container .xuanzhuo p {
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #e1e1e1;
+    position: relative;
+    padding-left: 10px;
+}
+
+.container .xuanzhuo p:nth-child(1) {
+    font-size: 16px;
+    color: #000;
+}
+
+.container .xuanzhuo .p1 span:last-child {
+    float: right;
+    margin-right: 10px;
+}
+
+.container .xuanzhuo .p1 .sp {
+    position: absolute;
+    right: 30px;
+    color: #000;
+}
+.container .lixi{
+    height: 200px;
+}
+/*内容结束*/
+/*footer开始*/
+footer{
+    height: 80px;
+    background-color: #eeeeee;
+    position: relative;
+}
+footer div{
+    width: 60%;
+    height: 50px;
+    background-color: #f2bd47;
+    border-radius: 30px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 15px;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+/*footer结束*/

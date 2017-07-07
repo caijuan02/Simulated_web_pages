@@ -1,0 +1,71 @@
+/*nav开始*/
+nav .container-fluid > div:last-child{
+    background-color: #017e5c;
+}
+nav .container-fluid > div:first-child{
+    background-color: #eee;
+}
+nav .container-fluid > div .icon-1 {
+    width: 15px;
+    height: 16px;
+    background: url("../img/icon-index1.png") no-repeat 0 0;
+    margin: 0 auto;
+}
+nav .container-fluid > div .icon-4 {
+    width: 16px;
+    height: 16px;
+    background: url("../img/icon-index1.png") no-repeat 0 -67px;
+    margin: 0 auto;
+}
+nav .container-fluid > div .word a:hover {
+    text-decoration: none;
+}
+nav .container-fluid > div:first-child a {
+    color: #a6a6a6;
+}
+nav .container-fluid > div:last-child a {
+    color: #fff;
+}
+/*nav结束*/
+/*header开始*/
+header p{
+    width: 28px;
+    margin: 0 auto;
+    line-height: 80px;
+}
+/*header结束*/
+/*内容开始*/
+.container > div:first-child{
+    text-align: center;
+    margin-bottom: 50px;
+    color: #ababab;
+}
+.container > div:first-child > .logo{
+    width: 137px;
+    height: 36px;
+    background: url("../img/logo-more.png") no-repeat;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+.container > .about div{
+    width: 80%;
+    margin: 0 auto;
+    height: 50px;
+    color: #a6a6a6;
+    border: 1px solid #e5e5e5;
+    line-height: 50px;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 1px #ebebeb;
+    padding-left: 17px;
+    box-sizing: border-box;
+}
+.container > .about div span{
+    position: absolute;
+    right: 10px;
+}
+.container > .about a:hover{
+    text-decoration: none;
+}
+/*内容结束*/

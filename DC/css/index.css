@@ -1,0 +1,226 @@
+.index-nav{
+    width: 100%;
+    height: 40px;
+    background: #2c2c2c;
+    line-height: 40px;
+}
+.index-nav a{
+    color: #ffffff;
+}
+.index-nav > .nav-left{
+    float: left;
+    margin-left: 10%;
+}
+.index-nav > .nav-left > ul > li{
+    float: left;
+    margin-right: 36px;
+}
+.index-nav > .right{
+    float: left;
+    margin-left: 15%;
+}
+.index-nav > .right > ul > li{
+    float: left;
+    margin-right: 36px;
+}
+.index-nav > .right > ul > li a{
+    display: inline-block;
+}
+.index-nav > .right > ul > li a img{
+    vertical-align: middle;
+}
+.logo{
+    height: 99px;
+    position: relative;
+    border-bottom: 3px solid #0097FF;
+}
+.logo > img{
+    /*position: absolute;*/
+    margin-left: 10%;
+    top: 50%;
+    margin-top: 21px;
+}
+.logo > .title{
+    position: absolute;
+    top: 50%;
+    margin-top: -21px;
+    margin-left: 23%;
+}
+.logo > .title > p:first-child{
+    width: 130px;
+    text-align: center;
+}
+.logo > .title > p:last-child{
+    margin-top: 3px;
+    width: 130px;
+    height: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    background: #ff9126;
+    border-radius: 10px;
+}
+.logo > .search{
+    width: 787px;
+    height: 41px;
+    border: 2px solid #0097FF;
+    box-sizing: border-box;
+    position: absolute;
+    margin-left: 35%;
+    top: 50%;
+    margin-top: -21px;
+}
+.logo > .search > input{
+    width: 700px;
+    height: 37px;
+    line-height: 37px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+}
+.logo > .search > p{
+    color: #fff;
+    width: 60px;
+    font-size: 16px;
+    background: #0097FF;
+    height: 37px;
+    line-height: 37px;
+    text-align: center;
+    float: right;
+    cursor: pointer;
+}
+.logo > .search > ul {
+    position: absolute;
+    right: 80px;
+    top: 4px;
+}
+.logo > .search > ul > li {
+    font-size: 12px;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 5px;
+    background: #ebebeb;
+    margin-left: 3px;
+    box-sizing: border-box;
+}
+.active > a{
+    color: #0097FF;
+}
+
+
+
+.footer{
+    height: 234px;
+    background: #70717a;
+    color: #fff;
+}
+.footer > div{
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    border-top: 1px solid transparent;
+    position: relative;
+    top: -1px;
+}
+.footer > div > h2{
+    margin-top: 26px;
+}
+.footer > div > .carousel2{
+    width: 1133px;
+    margin: 0 auto;
+    height: 43px;
+    margin-top: 30px;
+    position: relative;
+}
+.footer > div > .carousel2 > div:first-child{
+    width: 1133px;
+    margin: 0 auto;
+    height: 43px;
+    overflow: hidden;
+    position: relative;
+}
+.footer > div > .carousel2 ul{
+    width: 1133px;
+    height: 43px;
+    position: absolute;
+    /*left: -500px;*/
+    top: 0;
+}
+.footer > div > .carousel2 ul li{
+    float: left;
+    margin-right: 10px;
+}
+.footer > div > .carousel2 ul li:last-child{
+    margin-right: 0;
+}
+.footer > div > .carousel2 > div:not(:first-child){
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+    color: #CCCCCC;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    cursor: pointer;
+}
+.footer > div > .carousel2 > .left-btn{
+    left: -33px;
+}
+.footer > div > .carousel2 > .right-btn{
+    right: -33px;
+}
+
+
+.footer > div > .line{
+    width: 100%;
+    height: 0;
+    border-top: 1px dashed #fff;
+    margin: 20px 0;
+}
+.footer > div > .footer-nav{
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+.footer > div > .footer-nav ul {
+    width: 55%;
+    margin: 0 auto;
+    height: 30px;
+}
+.footer > div > .footer-nav ul > li{
+    float: left;
+    position: relative;
+}
+.footer > div > .footer-nav ul > li:not(:last-child){
+    margin-right: 30px;
+}
+.footer > div > .footer-nav ul > li:not(:last-child)::after{
+    display: block;
+    content: "";
+    width: 2px;
+    height: 14px;
+    background-color: #fff;
+    position: absolute;
+    left: 70px;
+    top: 9px;
+}
+.footer > div > .footer-nav ul > li > a{
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

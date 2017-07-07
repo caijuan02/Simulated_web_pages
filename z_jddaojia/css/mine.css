@@ -1,0 +1,277 @@
+html{
+    height: 771px;
+}
+.zhuce{
+    padding-top: 24px;
+    min-height: 91px;
+    color: #fff;
+    background: url("../img/my_bg.jpg") no-repeat center top;
+    background-size: cover;
+    line-height: 0;
+}
+.zhuce > img{
+    float: left;
+    display: block;
+    background: url("../img/bg_photo@2x.png") no-repeat;
+    background-size: auto 69px;
+    width: 69px;
+    height: 69px;
+    margin: 0 16px;
+    border-radius: 50px;
+    vertical-align: middle;
+    border: none;
+}
+.zhuce .registered{
+    display: block;
+    float: left;
+    height: 27px;
+    line-height: 27px;
+    padding: 0 10px;
+    color: #47b34f;
+    border-bottom: 1px solid #449409;
+    border-radius: 2px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    background: #fff;
+    margin-top: 19px;
+}
+.wallet{
+    margin-bottom: 10px;
+    padding-left: 15px;
+    background-color: #fff;
+}
+.wallet .wallet-ul{
+    padding-top: 10px;
+}
+.wallet .wallet-ul > li{
+    width: 32%;
+    float: left;
+    text-align: center;
+    position: relative;
+}
+.wallet-ul > li .wallet-i1{
+    display: block;
+    width: 23px;
+    height: 29px;
+    position: relative;
+    left: 40%;
+    background: url("../img/my_wallet.png") no-repeat;
+    background-size: 23px auto;
+    margin-top: 2px;
+}
+.wallet-ul > li .wallet-point{
+    position: absolute;
+    top: 45%;
+    right: -3px;
+    width: 5px;
+    height: 5px;
+    background: #fff;
+    transform: rotate(-45deg);
+    z-index: 99;
+}
+.wallet-ul > li .wallet-point::before{
+    height: 1px;
+    content: '';
+    width: 100%;
+    border-bottom: 1px solid #e8e8e8;
+    position: absolute;
+    bottom: -1px;
+    right: 0;
+    transform: scaleY(0.5);
+    z-index: 10;
+}
+.wallet-ul > li .wallet-point::after{
+    height: 100%;
+    content: '';
+    width: 1px;
+    border-bottom: 1px solid #e8e8e8;
+    position: absolute;
+    top: 0;
+    right: -1px;
+    transform: scaleX(0.5);
+    z-index: 10;
+}
+.wallet-ul > li .line{
+    height: 100%;
+    content: '';
+    width: 1px ;
+    border-right: 1px solid #e8e8e8;
+    position: absolute;
+    top: 0;
+    right: -1px;
+    transform: scaleX(0.5);
+    z-index: 10;
+}
+.wallet-ul > li > a{
+    display: block;
+    position: relative;
+    color: #555;
+    font-size: 14px;
+    line-height: 41px;
+}
+.wallet-ul > li > a > .omit{
+    display: block;
+    height: 20px;
+    line-height: 20px;
+}
+.information{
+    margin-bottom: 10px;
+    padding-left: 15px;
+    background: #fff;
+}
+.information > a{
+    display: block;
+    color: #555;
+    font-size: 14px;
+    line-height: 44px;
+    position: relative;
+}
+.information .a7{
+    line-height: 41px;
+}
+.information > a > i{
+    display: block;
+}
+.information > a > span{
+    position: relative;
+    top: 1px;
+}
+.information > a .info-i1{
+    width: 26px;
+    height: 41px;
+    vertical-align: -16px;
+    background: url("../img/focus.png") no-repeat -40px 14px;
+    background-size: 58px auto;
+    float: left;
+}
+.info-icon{
+    width: 26px;
+    height: 44px;
+    vertical-align: -16px;
+    background: url("../img/pdj_2_sprites.png") no-repeat;
+    background-size: 320px auto;
+    display: block;
+    float: left;
+}
+.information > a .info-i2{
+    background-position: -191px -44px;
+}
+.information > a .info-i3{
+    background-position: -191px -88px;
+}
+.information > a .info-i4{
+    background-position: -189px -132px;
+}
+.information > a .info-i5{
+    background-position: -101px -131px;
+}
+.information > a .info-i6{
+    background-position: -189px -176px;
+}
+.information > a .info-i7{
+    float: left;
+    width: 26px;
+    height: 19px;
+    background: url("../img/invite.png") no-repeat;
+    background-size: 70% auto;
+    position: relative;
+    top: 11px;
+}
+.information > a .info-i8{
+    float: left;
+    width: 26px;
+    height: 21px;
+    vertical-align: top;
+    background: url("../img/research.png") no-repeat;
+    background-size: 15px 17px;
+    position: relative;
+    top: 14px;
+}
+.information > a .info-i9{
+    float: left;
+    width: 17px;
+    height: 17px;
+    background: url("../img/icon_list_help.png") no-repeat;
+    background-size: 17px;
+    margin-right: 8px;
+    margin-top: 11px;
+    vertical-align: top;
+}
+.information > a .info-i10{
+    background-position: -189px -220px;
+}
+.a1::before{
+    border-bottom: 1px solid #e8e8e8;
+    content: '';
+    display: block;
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    bottom: -1px;
+    right: 0;
+    transform: scaleY(0.5);
+    z-index: 10;
+}
+.a2::after{
+    display: block;
+    content: '';
+    width: 44px;
+    height: 50px;
+    background: url("../img/pdj_2_sprites.png") no-repeat -80px -264px;
+    background-size: 320px auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.about{
+
+}
+
+
+
+
+
+/*尾部开始*/
+footer{
+    position: fixed;
+    z-index: 826;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    border-top: 1px solid #d9d9d9;
+}
+footer a{
+    display: block;
+    float: left;
+    width: 20%;
+    height: 20px;
+    font-size: 12px;
+    line-height: 17px;
+    text-align: center;
+    padding-top: 30px;
+    background: url("../img/nav2.png") no-repeat;
+    background-size: 22px 500px;
+}
+footer .index{
+    background-position: center -250px;
+}
+.color{
+    color: #39ac69;
+}
+footer .type{
+    background-position: center -300px;
+}
+footer .shop{
+    background-position: center -350px;
+}
+footer .myOrder{
+    background-position: center -400px;
+}
+footer .mine{
+    background-position: center -200px;
+}
+/*尾部结束*/

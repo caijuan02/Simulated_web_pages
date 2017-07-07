@@ -1,0 +1,47 @@
+<div class="excellentCourse">
+    <div class="excellent-banner">
+        <div class="banner-top">
+            <p>精品课程是博志成邀请独家合作老师，选择重难点专业、以系统化值是分享为指导，以指导实践操作为宗旨。创新尝试以解决问题、以体系化建设的微课组成精品的系统化课程。选择您本专业的内容，专业技能提升，为您<br />的职业成长保驾护航。</p>
+            <a href="#watch" ng-click="jump()">
+                查看精品课程
+            </a>
+        </div>
+        <div class="banner-bottom">
+            <div class="advantage clearFix">
+                <div>
+                    <h5>精品课程</h5>
+                    <p>强老师、优内容、好课程</p>
+                </div>
+                <div>
+                    <h5>实战专家</h5>
+                    <p>标杆背景、会讲课、善指导</p>
+                </div>
+                <div>
+                    <h5>实操实用</h5>
+                    <p>解决问题、实战落地课程开发</p>
+                </div>
+                <div>
+                    <h5>实战辅导</h5>
+                    <p>课后习题、统一评价反馈</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="excellent">
+        <a name="watch"></a>
+        <h2>精品课程供你选择</h2>
+        <ul class="clearFix">
+            <li ng-repeat="e in exceArr track by $index" ng-mouseover="showAbnormal($event)" data-index={{$index}}>
+                <a href>
+                    <div class="normal">
+                        <span>{{e.normal}}</span>
+                    </div>
+                    <div class="abnormal" ng-class="{true:'show-abnormal'}[index==$index]">
+                        <p>{{e.abnormal}}</p>
+                        <input type="button" value="查看详情">
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

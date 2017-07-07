@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>地产学堂</title>
+    <link rel="stylesheet" href="css/initialize.css">
+    <!--<link rel="stylesheet" href="css/bootstrap.css">-->
+    <link rel="stylesheet" href="css/index.css">
+
+    <link rel="stylesheet" href="main/main.css">
+
+    <link rel="stylesheet" href="onlineCourse/onlineCourse.css">
+
+    <link rel="stylesheet" href="publicCourse/publicCourse.css">
+    	
+    <link rel="stylesheet" href="microClass/microClass.css" />
+
+    <link rel="stylesheet" href="excellentCourse/excellentCourse.css">
+
+    <link rel="stylesheet" href="questionAnswer/questionAnswer.css">
+
+</head>
+<body ng-app="app">
+<div class="index-nav">
+    <div class="nav-left">
+        <ul class="clearFix">
+            <li ui-sref-active="active"><a ui-sref="index">首页</a></li>
+            <li ui-sref-active="active"><a ui-sref="onlineCourse">在线课程</a></li>
+            <li ui-sref-active="active"><a ui-sref="excellentCourse">精品课程</a></li>
+            <li ui-sref-active="active"><a ui-sref="publicCourse">公开课</a></li>
+            <li ui-sref-active="active"><a ui-sref="microClass">微课堂</a></li>
+            <li ui-sref-active="active"><a ui-sref="questionAnswer">问答专区</a></li>
+            <li ui-sref-active="active"><a >办理年卡</a></li>
+        </ul>
+    </div>
+    <div class="right">
+        <ul class="clearFix">
+            <li><a href="###"><img src="img/weixin.png" alt=""></a></li>
+            <li><a href="###"><img src="img/weibo.png" alt=""></a></li>
+            <li><a href="#">登录</a></li>
+            <li><a href="#">注册</a></li>
+            <li><a href="###">4008 031 051</a></li>
+        </ul>
+    </div>
+</div>
+<div class="logo clearFix">
+    <img src="img/logo.png" alt="">
+    <div class="title">
+        <p>地产人的学习平台</p>
+        <p>dichanxuetang.com</p>
+    </div>
+    <div class="search">
+        <input type="text">
+        <p>搜索</p>
+        <ul class="clearFix">
+            <li>微课堂</li>
+            <li>项目总经理培训</li>
+            <li>成本管理</li>
+            <li>人力资源</li>
+        </ul>
+    </div>
+</div>
+
+<div ui-view></div>
+
+<div class="footer" ng-controller="indexCtrl">
+    <div>
+        <h2>友情链接</h2>
+        <div class="carousel2">
+            <div>
+                <ul class="clearFix" ng-mouseover="stop()" ng-mouseout="start()">
+                    <li ng-repeat="i in arr track by $index"><a href=""><img src="{{i.src}}" alt=""></a></li>
+                </ul>
+            </div>
+            <div class="left-btn" ng-click="prevImg()">&lt;</div>
+            <div class="right-btn" ng-click="nextImg()">&gt;</div>
+        </div>
+        <div class="line" ></div>
+        <div class="footer-nav">
+            <ul>
+                <li><a href="###">关于我们</a></li>
+                <li><a href="###">加入我们</a></li>
+                <li><a href="###">商务合作</a></li>
+                <li><a href="###">新手指南</a></li>
+                <li><a href="###">开始学习</a></li>
+                <li><a href="###">企业管理</a></li>
+                <li><a href="###">企业购买</a></li>
+                <li><a href="###">联系我们</a></li>
+            </ul>
+        </div>
+        <p>&copy;2015.地产学堂-专注房地产人才培训&nbsp;京ICP备09020143号-3&nbsp;All rights reserved</p>
+    </div>
+</div>
+
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/angular-1.5.8.js"></script>
+<script src="js/angular-ui-router.js"></script>
+<script src="js/angular-animate.js"></script>
+
+<script src="js/hcmove.js"></script>
+<script src="js/index.js"></script>
+<script src="js/indexService.js"></script>
+<!--引入路由模块-->
+<script src="rout/rout.js"></script>
+
+<!--引入首页-->
+<script src="main/mainApp.js"></script>
+<script src="main/mainCtrl.js"></script>
+<script src="main/mainService.js"></script>
+
+<!--引入在线课程-->
+<script src="onlineCourse/onlineCourseApp.js"></script>
+<script src="onlineCourse/onlineCourseCtrl.js"></script>
+
+<!--引入精品课程-->
+<script src="excellentCourse/excellentCourseApp.js"></script>
+<script src="excellentCourse/excellentCourseCtrl.js"></script>
+
+<!--引入公开课-->
+<script src="publicCourse/publicCourseApp.js"></script>
+<script src="publicCourse/publicCourseCtrl.js"></script>
+
+<!--引入微课堂-->
+<script src="microClass/microClassApp.js"></script>
+<script src="microClass/microClassCtrl.js"></script>
+
+<!--引入问答专区-->
+<script src="questionAnswer/questionAnswerApp.js"></script>
+<script src="questionAnswer/questionAnswerCtrl.js"></script>
+
+<script>
+    angular.module('app',['myRoute','mainApp','index','onlineCourseApp','excellentCourseApp','publicCourseApp','microClassApp','questionAnswerApp'])
+            /*//修改 $http 方法参数拼接和 请求头中的 content-type
+            .config(function ($httpProvider) {
+                $httpProvider.defaults.transformRequest = function (obj) {
+                    var str = [];
+                    for (var p in obj) {
+                        str.push(encodeURIComponent(p) + "=" + encodeURIComponent(obj[p]));
+                    }
+                    return str.join("&");
+                };
+                $httpProvider.defaults.headers.post = {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                }
+            })*/
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

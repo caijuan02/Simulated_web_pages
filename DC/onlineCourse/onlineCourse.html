@@ -1,0 +1,108 @@
+<div class="onlineCourse">
+    <div class="online-banner"></div>
+    <div class="online">
+        <div class="course-nav">
+            <a ui-sref="index">首页</a>
+            <span>/在线课程</span>
+        </div>
+        <div class="course-type">
+            <div class="title">
+                <i></i>
+                <a href="###">专业分类</a>
+            </div>
+        </div>
+        <div class="course-detail">
+            <dl class="clearFix">
+                <dt>住宅地产：</dt>
+                <dd><a href="javascript:void(0)">投融资</a></dd>
+                <dd><a href="javascript:void(0)">前端开发</a></dd>
+                <dd><a href="javascript:void(0)">定位策划</a></dd>
+                <dd><a href="javascript:void(0)">设计管理</a></dd>
+                <dd><a href="javascript:void(0)">成本招采</a></dd>
+                <dd><a href="javascript:void(0)">工程管理</a></dd>
+                <dd><a href="javascript:void(0)">营销管理</a></dd>
+                <dd><a href="javascript:void(0)">社区运营</a></dd>
+                <dd><a href="javascript:void(0)">品牌客服</a></dd>
+            </dl>
+            <dl class="clearFix">
+                <dt>商业地产：</dt>
+                <dd><a href="javascript:void(0)">定位策划</a></dd>
+                <dd><a href="javascript:void(0)">设计工程</a></dd>
+                <dd><a href="javascript:void(0)">商业物业</a></dd>
+            </dl>
+            <dl class="clearFix">
+                <dt>其他业态：</dt>
+                <dd><a href="javascript:void(0)">产业地产</a></dd>
+                <dd><a href="javascript:void(0)">文旅地产</a></dd>
+            </dl>
+            <dl class="clearFix">
+                <dt>管理类：</dt>
+                <dd><a href="javascript:void(0)">战略运营</a></dd>
+                <dd><a href="javascript:void(0)">企业管理</a></dd>
+                <dd><a href="javascript:void(0)">产品线</a></dd>
+                <dd><a href="javascript:void(0)">财务税筹</a></dd>
+                <dd><a href="javascript:void(0)">人力资源</a></dd>
+                <dd><a href="javascript:void(0)">行政会议</a></dd>
+                <dd><a href="javascript:void(0)">信息化</a></dd>
+                <dd><a href="javascript:void(0)">办公技巧</a></dd>
+                <dd><a href="javascript:void(0)">通信管理4</a></dd>
+            </dl>
+        </div>
+        <div class="sort">
+            <div class="sort-type">
+                <a href="javascript:void(0)">最新</a>
+                <a href="javascript:void(0)">最热</a>
+            </div>
+            <div class="course-introduce">
+                <div class="" ng-repeat="i in courseArr track by $index">
+                    <img src="{{i.src}}" alt="">
+                    <p>{{i.detail}}</p>
+                    <p class="course-price">
+                        <span>{{i.newPrice}}</span>
+                        <span>{{i.oldPrice}}</span>
+                        <span>{{i.focus}}</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <ul class="pagination">
+        <li ng-class="{true:'hide'}[now==1]">
+            <a href="javascript:void(0)"
+                ng-click="changePage(now-1)"
+            >上一页</a>
+        </li>
+        <li ng-repeat="i in pages track by $index">
+            <a href="javascript:void(0)"
+                ng-class="{true:'active'}[now==i+1]"
+                ng-click="changePage(i+1)"
+            >{{i+1}}</a>
+        </li>
+
+        <li ng-class="{true:'hide'}[now == dataNum]">
+            <a href="javascript:void(0)"
+                ng-click="changePage(now+1)"
+            >下一页</a>
+        </li>
+    </ul>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

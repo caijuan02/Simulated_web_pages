@@ -1,0 +1,76 @@
+<div class="quesAnswer">
+    <div class="quesAnswer-banner">
+        <div class="ques clearFix">
+            <div class="quesLogin">
+                <div class="quesLogin-top">
+                    <input type="button" value="立即登录">
+                </div>
+                <div class="quesLogin-bottom">
+                    <div class="head"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="answer">
+        <div class="answer-main clearFix">
+            <div class="answer-left">
+                <div class="answer-title clearFix">
+                    <span>全部问题</span>
+                </div>
+                <div class="answer-cont">
+                    <ul class="clearFix">
+                        <li>全部</li>
+                        <li>待解答</li>
+                        <li>已解答</li>
+                    </ul>
+                    <div class="chose">
+                        <form>
+                            <input type="text" class="content" placeholder="按关键词查询">
+                            <input type="button" class="chosebtn" value="筛选">
+                        </form>
+                    </div>
+                    <div class="detail">
+                        <ul>
+                            <li ng-repeat="q in quesArr track by $index">
+                                <a href=""><i>{{q.num}}</i>{{q.detail}}</a>
+                                <a href=""><span>{{q.person}}</span><span>人参与 | </span><span>{{q.time}}</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="answer-right">
+                <div class="rmht clearFix">
+                    <span>热门话题</span>
+                    <a href="">排行榜</a>
+                </div>
+                <ul>
+                    <li ng-repeat="qu in quesArr | orderBy : -nth" class="clearFix">
+                        <a href="">{{qu.detail}}</a>
+                        <span>{{qu.nth}}</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <ul class="pagination">
+        <li ng-class="{true:'hide'}[now==1]">
+            <a href="javascript:void(0)"
+               ng-click="changePage(now-1)"
+            >上一页</a>
+        </li>
+        <li ng-repeat="i in pages track by $index">
+            <a href="javascript:void(0)"
+               ng-class="{true:'active'}[now==i+1]"
+               ng-click="changePage(i+1)"
+            >{{i+1}}</a>
+        </li>
+
+        <li ng-class="{true:'hide'}[now == dataNum]">
+            <a href="javascript:void(0)"
+               ng-click="changePage(now+1)"
+            >下一页</a>
+        </li>
+    </ul>
+</div>

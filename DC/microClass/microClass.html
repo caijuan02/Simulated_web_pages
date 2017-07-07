@@ -1,0 +1,73 @@
+<div class="publicCourse">
+    <div class="pubbanner"></div>
+    <div class="pub clearFix">
+
+    	<div class="public-left">
+    		<div class="pub-title">
+    			<span>往期微课</span>
+    			<hr />
+    		</div>
+    		<ul>
+    			<li class="clearFix" ng-repeat="pub in pubArr track by $index">
+    				<div class="public-pic"><img src="{{pub.pic}}" alt="" /></div>
+    				<div class="public-detail">
+    					<dl>
+    						<dt>{{pub.dt}}</dt>
+    						<dd id="detail1">
+    							<span>{{pub.detail}}</span>
+    						</dd>
+    						<dd>
+    							<span>原价：</span>
+    							<span class="money">{{pub.oldPrice}}</span>
+    							<span>现价：</span>
+    							<span class="money">{{pub.count}}</span>
+    						</dd>
+    					</dl>
+    				</div>
+    				<div class="public-apply">
+    					<a href>查看详情</a>
+    				</div>
+    			</li>
+    		</ul>
+    	</div>
+    	<div class="public-right">
+    		<div class="pub-title">
+    			<span>线上热销课程推荐</span>
+    			<hr />
+    		</div>
+    		<ul>
+    			<li ng-repeat="img in imgArr track by $index">
+    				<div><img src="{{img.pic}}" alt="" /></div>
+    				<p>{{img.count}}</p>
+    			</li>
+    		</ul>
+    	</div>
+    </div>
+    
+    <ul class="pagination">
+        <li ng-class="{true:'hide'}[now==1]">
+            <a href="javascript:void(0)"
+                ng-click="changePage(now-1)"
+            >上一页</a>
+        </li>
+        <li ng-repeat="i in pages track by $index">
+            <a href="javascript:void(0)"
+                ng-class="{true:'active'}[now==i+1]"
+                ng-click="changePage(i+1)"
+            >{{i+1}}</a>
+        </li>
+
+        <li ng-class="{true:'hide'}[now == dataNum]">
+            <a href="javascript:void(0)"
+                ng-click="changePage(now+1)"
+            >下一页</a>
+        </li>
+    </ul>
+</div>
+
+
+
+
+
+
+

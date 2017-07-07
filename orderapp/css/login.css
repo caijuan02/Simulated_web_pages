@@ -1,0 +1,105 @@
+body{
+    background: url("../img/bg-body.jpg") no-repeat;
+    background-size: cover;
+}
+/*头部开始*/
+header{
+    height: 80px;
+    background-color: #017e5c;
+    text-align: center;
+    position:relative;
+    color: #fff;
+}
+header a{
+    position: absolute;
+    top: 10px;
+    left: 28px;
+}
+header  div:first-child{
+    position: absolute;
+    top: 20px;
+    left: 28px;
+}
+header  div:first-child i{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("../img/icon-login.png") no-repeat;
+    background-size: cover;
+}
+header > span:last-child{
+    line-height: 80px;
+}
+/*头部结束*/
+/*内容开始*/
+.container > div:first-child{
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    color: #017e5c;
+}
+.container form{
+    text-align: center;
+}
+.container form > div:not(:last-child){
+    width: 80%;
+    margin: 0 auto;
+    height: 40px;
+    border: 1px solid #e5e5e5;
+    margin-bottom: 20px;
+    line-height: 40px;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 1px #ebebeb;
+}
+.container form > div:not(:last-child) input{
+    width: 80%;
+    height: 30px;
+    border: none;
+}
+.container form > div i{
+    display: inline-block;
+    width: 10px;
+    height: 13px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+.container form > div:nth-child(1) i{
+    background: url("../img/icon-login.png") no-repeat 0 -28px;
+}
+.container form > div:nth-child(2) i{
+    background: url("../img/icon-login.png") no-repeat 0 -46px;
+}
+.container form > a input{
+    width: 80%;
+    height: 60px;
+    color: #fff;
+    border: 1px solid #e5e5e5;
+    background-color: #f2bd47;
+    box-shadow: 0 1px #ebebeb;
+    margin-bottom: 38px;
+}
+.container form .zhuce{
+    width: 80%;
+    margin: 0 auto;
+    height: 40px;
+    line-height: 40px;
+}
+.container form .zhuce a input{
+    width: 30%;
+    height: 40px;
+    float: left;
+    color: #fff;
+    border: 1px solid #dcdcdc;
+    background-color: #017e5c;
+}
+.container form .zhuce div{
+    float: right;
+    height: 30px;
+    border-bottom: 1px solid #ff945a;
+}
+.container form .zhuce div a{
+    color: #ff945a;
+}
+/*内容结束*/

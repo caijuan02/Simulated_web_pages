@@ -1,0 +1,606 @@
+/*导航*/
+nav {
+    width: auto;
+    height: 42px;
+    background-color: #88c5e1;
+    padding: 12px 6.5%;
+    border-bottom: 5px solid #54abd4;
+    /*position: fixed;*/
+}
+
+nav .logo-all {
+    width: 20%;
+    margin-right: 10%;
+    float: left;
+}
+
+nav .logo-all div img {
+    height: 40px;
+    float: left;
+    padding: 0 2%;
+}
+
+.logo-all .logo1 {
+    display: none;
+}
+
+.logo-all .logo2 {
+    display: none;
+}
+
+nav .search {
+    width: 35%;
+    float: left;
+    padding: 0 15px 0 0;
+}
+
+nav .search form input {
+    width: 100%;
+    height: 26px;
+    line-height: 40px;
+    background-color: rgb(245, 245, 245);
+    border: 1px solid #f5f5f5;
+    border-radius: 2px;
+    padding: 6px 10px;
+}
+
+nav .nav {
+    width: 25%;
+    float: right;
+    height: 42px;
+    position: relative;
+    line-height: 42px;
+}
+
+nav .nav p {
+    float: left;
+    color: #fff;
+    text-align: center;
+    width: 25%;
+}
+
+nav .nav p a {
+    font-size: 1rem;
+}
+
+nav .nav p > div {
+    width: 54px;
+    height: 0;
+    position: relative;
+    top: -5px;
+    left: 7px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+nav .nav > div {
+    width: 30px;
+    height: 30px;
+    border: 3px solid #fff;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+@media screen and (max-width: 900px) {
+    .logo-all div:not(.logo1) {
+        display: none;
+    }
+
+    nav .logo-all {
+        margin-right: 5%;
+    }
+
+    nav .logo-all .logo1 {
+        display: block;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    nav .logo-all div:not(.logo2) {
+        display: none;
+    }
+
+    nav .logo-all {
+        margin-right: 3%;
+    }
+
+    nav .logo-all .logo2 {
+        display: block;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    nav .nav > div {
+        display: inline-block;
+    }
+
+    nav .nav p {
+        display: none;
+    }
+
+    nav .search {
+        width: 45%;
+    }
+}
+
+/*内容*/
+.container {
+    height: 338px;
+    padding: 80px 5%;
+    /*margin: 40px 0;*/
+    background: url("../img/homeImg.png") no-repeat;
+    background-size: cover;
+}
+
+.container .left {
+    width: 67%;
+    text-align: center;
+    float: left;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.container .right {
+    width: 33%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0 15px;
+    color: #fff;
+}
+
+.container .right form {
+    margin-top: 15px;
+}
+
+.container .right > div div {
+    float: left;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.container .right > div div:first-child {
+    margin-right: 10px;
+    position: relative;
+}
+
+.container .right > div div:first-child > div {
+    width: 64px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    position: absolute;
+    top: 30px;
+}
+
+.container .right > div div:last-child {
+    position: relative;
+}
+
+.container .right > div div:last-child > div {
+    width: 113px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    position: absolute;
+    top: 30px;
+    display: none;
+}
+
+.container .right > div div:last-child:hover div {
+    display: block;
+}
+
+.container .right form input:not(:nth-child(3)) {
+    width: 100%;
+    height: 38px;
+    box-sizing: border-box;
+    padding: 6px 10px;
+    margin: 15px 0;
+    border-radius: 2px;
+}
+
+.container .right form a {
+    float: right;
+}
+
+.container .right form a:hover {
+    text-decoration: underline;
+}
+
+.container .right form input:last-child {
+    border-radius: 6px;
+    background-color: #88c5e1;
+    font-size: 1.125rem;
+    color: #fff;
+    box-shadow: 0 .4rem 0 #54abd4, 0 .1rem 0 rgba(255, 255, 255, 0.5) inset;
+    border: none;
+}
+
+.container .right form input:last-child:hover {
+    transform: translateY(3px);
+    box-shadow: 0 .2rem 0 #54abd4, 0 .1rem 0 rgba(255, 255, 255, 0.5) inset;
+}
+
+@media screen and (max-width: 900px) {
+    .container .left {
+        width: 45%;
+    }
+
+    .container .right {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .container .left {
+        display: none;
+    }
+
+    .container .right {
+        width: 100%;
+    }
+}
+
+/*main*/
+.main {
+    margin: 40px 8% 0;
+    width: 84%;
+}
+
+.main .main-all {
+    height: 1294px;
+    width: 65%;
+}
+
+.main .main-all .top {
+    box-sizing: border-box;
+    width: 100%;
+    height: 500px;
+    padding: 40px 25px 48px 25px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    box-shadow: 0 14px 10px -10px rgba(0,0,0,0.1);
+}
+
+.main .main-all .top > div:first-child {
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.1;
+    padding: 8px 16px;
+    border-left: 3px solid #88c5e1;
+    margin-bottom: 40px;
+}
+
+.main .main-all .top .img {
+    float: left;
+    width: 47.25%;
+    height: 300px;
+    text-align: center;
+    color: #999;
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.main .main-all .top .img .text {
+    padding: 9px;
+    margin: 18px 20px 8px 20px;
+
+}
+
+.main .main-all .top .img1 {
+    margin-right: 5%;
+}
+
+.main .main-all .top .img img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.main .main-all .top .circle {
+    width: 10%;
+    margin: 0 auto;
+}
+
+.main .main-all .top .circle div {
+    width: 15px;
+    height: 15px;
+    background-color: #f8c038;
+    border: 1px solid #f8c038;
+    border-radius: 50%;
+    float: left;
+    margin: 30px 5px 0 0;
+}
+
+.main .main-all .bottom {
+    box-sizing: border-box;
+    width: 100%;
+    height: 773px;
+    padding: 40px 25px 48px 25px;
+    background-color: #fff;
+    box-shadow: 0 14px 10px -10px rgba(0,0,0,0.1);
+}
+
+.main .main-all .bottom > div:first-child {
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.1;
+    padding: 8px 16px;
+    border-left: 3px solid #88c5e1;
+    margin-bottom: 40px;
+}
+/*.main .main-all .bottom .line1{*/
+    /*text-align:center;*/
+/*}*/
+.main .main-all .bottom .line1 > div {
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 302px;
+    float: left;
+    /*box-sizing: border-box;*/
+    padding: 0 10px;
+    margin-bottom: 20px;
+    width: 29.3%;
+}
+
+.main .main-all .bottom .line1 div:not(:last-child) {
+    margin-right: 10px;
+}
+
+/*.main .main-all .bottom .line1 .pic-all {*/
+    /*position: relative;*/
+/*}*/
+
+.main .main-all .bottom .line1 div .pic.pic1 {
+    width: 44px;
+    height: 55px;
+    background: url("../img/literature.png") no-repeat 50%;
+    background-size: cover;
+    margin: 0 auto;
+    margin-top: 60px;
+    /*position: absolute;*/
+}
+/*.main .main-all .bottom .line1 div .pic.pic1 {*/
+    /*/!*transform: rotate(60deg);*!/*/
+    /*z-index: 3;*/
+/*}*/
+/*.main .main-all .bottom .line1 div .pic.pic2 {*/
+    /*transform: rotate(60deg);*/
+    /*z-index: 2;*/
+/*}*/
+.main .main-all .bottom .line1 div .w0 {
+    /*width: 90%;*/
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 1.125rem;
+    padding: 10px 5% 16px 5%;
+    font-weight: 600;
+}
+.main .main-all .bottom .line1 div .w1 {
+    width: 90%;
+}
+.main .main-all .bottom .line1 div .w0 a{
+    color: #000;
+}
+
+.main .main-all .bottom .line1 div .w0 a:hover {
+    color: #54abd4;
+    text-decoration: underline;
+}
+.main .main-all .bottom .line1 div .people{
+    width: 55%;
+    margin: 0 auto;
+}
+.main .main-all .bottom .line1 div .people div a{
+    color: #fff;
+}
+.main .main-all .bottom .line1 div .people div {
+    float: left;
+    background-color: #88C5E1;
+    margin: 0 4px 4px 0;
+    padding: 0 8px 0 8px;
+    border-radius: 4px;
+    line-height: 24px;
+    transition: all 0.5s ease-out;
+    color: #fff;
+}
+.main .main-all .bottom .line1 div .people div:hover {
+    color: #fff;
+    background-color: #54abd4;
+}
+.main .main-all .bottom .line1 div .pf{
+    width: 65%;
+    margin: 10px auto;
+}
+.main .main-all .bottom .line1 div .pf div:not(:last-child){
+    width: 15px;
+    height: 15px;
+    background-color: #f8c038;
+    border-radius: 50%;
+    float: left;
+    margin-right: 5px;
+}
+.main .main-all .bottom .line1 div .pf div:last-child{
+    color: #f8c038;
+    font-size: .75rem;
+}
+.main .main-all .bottom .line1 div .last{
+    text-align: center;
+}
+.main .main-all .bottom .line1 div .last a{
+    color: #7d7d7d;!important;
+}
+.main .main-all .bottom .line1 div .last a:hover{
+    text-decoration: underline;
+}
+.main .main-all .bottom .line1 div .pic.pic2 {
+    width: 44px;
+    height: 55px;
+    background: url("../img/music.png") no-repeat 50%;
+    background-size: cover;
+    margin: 0 auto;
+    margin-top: 60px;
+    /*position: absolute;*/
+}
+.main .main-all .bottom .line1 div .w2 {
+    margin: 0 auto;
+    width: 54%;
+}
+.main .main-all .bottom .line1 div .w3 {
+    margin: 0 auto;
+    width: 54%;
+}
+.main .main-all .bottom .line1 div .pic.pic3 {
+    width: 44px;
+    height: 55px;
+    background: url("../img/art.png") no-repeat 50%;
+    background-size: cover;
+    margin: 0 auto;
+    margin-top: 60px;
+    /*position: absolute;*/
+}
+.main .main-all .bottom .line1 div .people.people1{
+    width: 31%;
+    margin: 0 auto;
+}
+.main .main-all .bottom .line1 div .people.people2{
+    width: 97%;
+    margin: 0 auto;
+}
+/*侧边开始*/
+.main aside {
+    width: 27%;
+    height: 570px;
+    float: right;
+    padding: 40px 25px 30px;
+    background-color: #fff;
+    color: #666;
+}
+
+.main aside > div:first-child {
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.1;
+    padding: 8px 16px;
+    border-left: 3px solid #88c5e1;
+    margin-bottom: 24px;
+}
+
+.main aside .content {
+    padding-bottom: 18px;
+}
+
+.main aside .content .title {
+    font-weight: 500;
+    line-height: 1.1;
+    padding: 8px 0 12px 0;
+}
+
+.main aside .content .word {
+    float: left;
+    background-color: #88C5E1;
+    margin: 0 4px 4px 0;
+    padding: 0 8px 0 8px;
+    border-radius: 4px;
+    line-height: 24px;
+    transition: all 0.5s ease-out;
+}
+
+.main aside .content .word:hover {
+    color: #fff;
+    background-color: #54abd4;
+}
+@media screen and (max-width:900px){
+    .main .main-all {
+        width: 100%;
+    }
+    .main aside {
+        display: none;
+    }
+    .main .main-all .bottom {
+        height: 1300px;
+    }
+    .main .main-all .bottom .line1 > div {
+        width: 50%;
+    }
+
+}
+/*footer*/
+footer{
+    margin: 0 8%;
+    height: 145px;
+    margin-top: 30px;
+    padding: 28px 0 18px 0;
+}
+footer .footer-top .row{
+    width: 100%;
+}
+footer .footer-top .row>div{
+    width: 50%;
+    float: left;
+}
+footer .footer-top .row .word>div{
+    float: left;
+}
+footer .footer-top .row .word .icon{
+    width: 10%;
+}
+footer .footer-top .row .word .icon img{
+    width: 100%;
+    max-width: 100%;
+}
+footer .footer-top .row .word .about{
+    margin-left: 2%;
+    width: 86%;
+}
+footer .footer-top .row .word .about div:first-child{
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    font-weight: 500;
+    padding: 3px 0 5px 0;
+}
+footer .footer-top .row .word .about div:last-child{
+    width: 100%;
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+}
+footer .footer-top .row .word .icon .icon1{
+    border-radius: 10px;
+}
+footer .footer-bottom {
+    width: 100%;
+    text-align: center;
+    margin-top: 18px;
+    line-height: 1.125rem;
+    font-size: .75rem;
+}
+footer .footer-bottom .p-all{
+    margin: 0 auto;
+    width: 20%;
+}
+footer .footer-bottom .p-all p{
+    cursor: pointer;
+    margin-right: 5px;
+    float: left;
+}
+footer .footer-bottom .p-all p a{
+    color: #7d7d7d;
+}
+footer .footer-bottom .p-all p a:hover{
+    color: #54abd4;
+    text-decoration: underline;
+}
+footer .footer-bottom .p-all .mike a{
+    color: #9a7c38;
+    text-decoration: underline;
+}
+@media screen and (max-width:900px){
+    footer .footer-top .row>div{
+        width: 100%;
+    }
+}

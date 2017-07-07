@@ -1,0 +1,105 @@
+.top{
+    padding: 0 0 99px 0;
+    text-align: center;
+    background-color: rgb(255,255,255);
+}
+.address{
+    display: inline-block;
+    padding: 6px 7px;
+    border-radius: 32px;
+    background-color: #d1e7d3;
+    margin: 15px 0 10px 0;
+    position: relative;
+    z-index: 6;
+}
+.address > div{
+    display: inline-block;
+    line-height: 22px;
+    padding: 0 14px 0 32px;
+    border-radius: 22px;
+    font-size: 14px;
+    color: #fff;
+    background: #47b34f url('../img/loc2.png') no-repeat 10px center;
+    background-size: 15px 18px;
+}
+.address > div > span:last-child{
+    font-size: 12px;
+}
+table{
+    background-color: #fff;
+    z-index: 5;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+table td{
+    text-align: center;
+    vertical-align: middle;
+}
+table td > .login{
+    padding: 100px 0 160px 0;
+    line-height: 20px;
+    color: #666;
+    text-align: center;
+    font-size: 14px;
+    background: url("../img/unlogin.png") no-repeat center top;
+    background-size: 96px 96px;
+}
+table td > .login > a{
+    display: inline-block;
+    padding: 0 8px;
+    line-height: 35px;
+    background: #47b34f;
+    color: #fff;
+    font-size: 15px;
+    margin-top: 16px;
+    border-radius: 5px;
+}
+
+/*尾部开始*/
+footer{
+    position: fixed;
+    z-index: 826;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    border-top: 1px solid #d9d9d9;
+}
+footer a{
+    display: block;
+    float: left;
+    width: 20%;
+    height: 20px;
+    font-size: 12px;
+    line-height: 17px;
+    text-align: center;
+    padding-top: 30px;
+    background: url("../img/nav2.png") no-repeat;
+    background-size: 22px 500px;
+}
+footer .index{
+    background-position: center -250px;
+}
+.color{
+    color: #39ac69;
+}
+footer .type{
+    background-position: center -300px;
+}
+footer .shop{
+    background-position: center -100px;
+}
+footer .myOrder{
+    background-position: center -400px;
+}
+footer .mine{
+    background-position: center -450px;
+}
+/*尾部结束*/

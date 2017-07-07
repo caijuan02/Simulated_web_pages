@@ -1,0 +1,250 @@
+.quesAnswer{
+    position: relative;
+}
+.quesAnswer-banner{
+    height: 420px;
+    background: #7e7d8a;
+}
+.quesAnswer-banner > .ques{
+    width: 1190px;
+    height: 420px;
+    min-width: 1190px;
+    background: url("../img/askbj.png") no-repeat -200px center;
+    background-size: cover;
+    margin: 0 auto;
+}
+.quesAnswer-banner > .ques .quesLogin{
+    float: right;
+    width: 276px;
+    height: 374px;
+    background: #fff;
+    margin: 20px 20px 0 0;
+}
+.quesAnswer-banner > .ques .quesLogin > .quesLogin-top{
+    padding: 23px 83px;
+    border-bottom: 1px dashed #d6d6d6;
+}
+.quesAnswer-banner > .ques .quesLogin > .quesLogin-top > input{
+    cursor: pointer;
+    border: none;
+    width: 110px;
+    height: 36px;
+    line-height: 36px;
+    background: -webkit-linear-gradient(top,#26C9FF,#239ef4);
+    font-size: 16px;
+    border-radius: 3px;
+    color: #fff;
+}
+.quesAnswer-banner > .ques .quesLogin > .quesLogin-bottom{
+    padding-bottom: 26px;
+    background: url("../img/askhelpfont.png") no-repeat bottom center;
+}
+.quesAnswer-banner > .ques .quesLogin > .quesLogin-bottom > .head{
+    width: 80px;
+    height: 80px;
+    margin: 18px auto;
+    border-radius: 40px;
+    background: url("../img/touxiang.png") no-repeat center center;
+    background-size: cover;
+    
+}
+.answer{
+    min-width: 1190px;
+    background: #f5f5f5;
+    padding: 24px 0 64px 0;
+    overflow: hidden;
+}
+.answer > .answer-main{
+    width: 1190px;
+    margin: 0 auto;
+}
+.answer > .answer-main > .answer-left{
+    width: 900px;
+    float: left;
+}
+.answer > .answer-main > .answer-left > .answer-title{
+    background: #fff;
+    padding: 10px 0;
+    margin-bottom: 18px;
+}
+.answer > .answer-main > .answer-left > .answer-title > span{
+    font-size: 18px;
+    color: #757575;
+    display: block;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+}
+.answer > .answer-main > .answer-left > .answer-title > span::after{
+    display: block;
+    content: "";
+    width: 5px;
+    height: 20px;
+    background: #ff9126;
+    float: left;
+    margin: 6px 10px 0;
+}
+.answer > .answer-main > .answer-left > .answer-cont{
+    background: #fff;
+    padding-bottom: 131px;
+}
+.answer > .answer-main > .answer-left > .answer-cont > ul{
+    height: 54px;
+    line-height: 54px;
+    background: #e9e9e9;
+    cursor: pointer;
+}
+.answer > .answer-main > .answer-left > .answer-cont > ul > li{
+    float: left;
+    width: 188px;
+    line-height: 54px;
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+    border-right: 1px solid #ddd;
+}
+.answer > .answer-main > .answer-left > .answer-cont > .chose{
+    color: #757575;
+    padding: 9px 0;
+    margin: 0 36px;
+    border-bottom: 1px solid #dddddd;
+    overflow: hidden;
+}
+.answer > .answer-main > .answer-left > .answer-cont > .chose  input{
+    float: left;
+    width: 186px;
+    height: 30px;
+    border: 1px solid #d9d9d9;
+    box-shadow: 0px 1px 4px rgba(0,0,0,0.1) inset;
+    padding-left: 10px;
+    outline: none;
+}
+.answer > .answer-main > .answer-left > .answer-cont > .chose .chosebtn{
+    margin-left: 4px;
+    width: 69px;
+    height: 32px;
+    background: #fff3dd;
+    border-radius: 3px;
+    border: 1px solid #ff9126;
+    text-align: center;
+    padding: 0;
+    color: #ff9126;
+    font-size: 16px;
+    font-family: "微软雅黑";
+}
+.answer > .answer-main > .answer-left > .answer-cont > .detail{
+
+}
+.answer > .answer-main > .answer-left > .answer-cont > .detail > ul{
+    margin: 0 36px;
+    cursor: pointer;
+}
+.answer > .answer-main > .answer-left > .answer-cont > .detail > ul > li{
+    height: 56px;
+    line-height: 56px;
+    border-bottom: 1px solid #dddddd;
+}
+.answer > .answer-main > .answer-left > .answer-cont > .detail > ul > li > a:first-child{
+    color: #0097ff;
+    font-size: 16px;
+}
+.answer > .answer-main > .answer-left > .answer-cont > .detail > ul > li > a:first-child > i{
+    padding: 0 20px;
+    background: url("../img/gold.png") no-repeat left center;
+    font-size: 16px;
+    color: #ff3f3f;
+}
+.answer > .answer-main > .answer-left > .answer-cont > .detail > ul > li > a:last-child{
+    float: right;
+    color: #757575;
+    font-size: 12px;
+}
+.answer > .answer-main > .answer-left > .answer-cont > .detail > ul > li > a:last-child > span:first-child{
+    color: #ff9126;
+    font-weight: bold;
+    font-size: 14px;
+}
+.answer > .answer-main > .answer-right{
+    width: 260px;
+    background: #fff;
+    padding: 6px;
+    float: right;
+}
+.answer > .answer-main > .answer-right > .rmht{
+    color: #757575;
+    font-size: 18px;
+    padding: 10px;
+    border-bottom: 1px solid #dcdcdd;
+}
+.answer > .answer-main > .answer-right > .rmht > a{
+    color: #ff9126;
+    font-size: 12px;
+    font-weight: normal;
+    padding: 0 12px;
+    float: right;
+}
+.answer > .answer-main > .answer-right > ul{
+    cursor: pointer;
+}
+.answer > .answer-main > .answer-right > ul > li{
+    padding: 8px 12px;
+}
+.answer > .answer-main > .answer-right > ul > li > a{
+    color: #555555;
+    font-size: 14px;
+    float: left;
+}
+.answer > .answer-main > .answer-right > ul > li > a::before{
+    display: inline-block;
+    content: "";
+    width: 14px;
+    height: 14px;
+    margin-right: 12px;
+    text-align: center;
+    background: #ff9126;
+}
+.answer > .answer-main > .answer-right > ul > li > span{
+    float: right;
+}
+
+
+.quesAnswer > .pagination{
+    position: absolute;
+    left: 50%;
+    min-width: 400px;
+    bottom: 110px;
+    margin-left: -200px;
+}
+.quesAnswer > .pagination > li{
+    display: inline-block;
+}
+.quesAnswer > .pagination > li > a{
+    padding: 5px 10px;
+    color: #0097FE;
+    background: #fff;
+    border: 1px solid #ddd;
+    margin: 0 3px;
+}
+.quesAnswer > .pagination > .hide{
+    display: none;
+}
+.quesAnswer > .pagination > li > .active{
+    cursor: default;
+    background: #0097FE;
+    color: #fff;
+}
+.quesAnswer > .pagination > li > a:hover{
+    color: #23527c;
+    background: #eee;
+}
+.quesAnswer > .pagination > li:first-child > a{
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.quesAnswer > .pagination > li:last-child > a{
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+
+
